@@ -418,4 +418,4 @@ data:
     - name: default
       protocol: layer2
       addresses:
-      - 10.237.237.253
+      - 10.237.237.253/32
