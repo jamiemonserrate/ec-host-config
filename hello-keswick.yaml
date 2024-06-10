@@ -20,6 +20,8 @@ spec:
       labels:
         app: nginx-hello-keswick
     spec:
+      imagePullSecrets:
+        - name: dockerhub-image-pull-secret
       containers:
       - name: nginx-helloworld
         image: alanrenouf/docker-nginx-hello-keswick

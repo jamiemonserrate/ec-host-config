@@ -75,3 +75,5 @@ spec:
         resources:
           limits:
             memory: 2Gi
+      imagePullSecrets:
+        - name: dockerhub-image-pull-secret
