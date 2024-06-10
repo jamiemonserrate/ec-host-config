@@ -30,7 +30,7 @@ spec:
       securityContext:
         runAsUser: 0
       imagePullSecrets:
-        - name: dockerhub-image-pull-secret  
+        - name: regcred
       containers:
         - name: grafana
           image: grafana/grafana:latest

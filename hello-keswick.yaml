@@ -21,7 +21,7 @@ spec:
         app: nginx-hello-keswick
     spec:
       imagePullSecrets:
-        - name: dockerhub-image-pull-secret
+        - name: regcred
       containers:
       - name: nginx-helloworld
         image: alanrenouf/docker-nginx-hello-keswick
