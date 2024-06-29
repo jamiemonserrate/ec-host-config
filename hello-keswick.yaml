@@ -14,7 +14,16 @@ spec:
   selector:
     matchLabels:
       app: nginx-hello-keswick
-  replicas: 10 # tells deployment to run 1 pod matching the template
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - ec-worker-jamie
+  replicas: 1 # tells deployment to run 1 pod matching the template
   template:
     metadata:
       labels:
