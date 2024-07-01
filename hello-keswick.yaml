@@ -45,7 +45,8 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-keswick
+  name: nginx-for-jamie
+  namespace: hello-keswick
 spec:
   containers:
   - name: nginx-helloworld
