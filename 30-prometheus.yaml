@@ -66,7 +66,7 @@ spec:
       serviceAccountName: prometheus
       containers:
       - name: prometheus
-        image: build-docker-main.artifactory.eng.vmware.com/prometheus:v2.37.0
+        image: prom/prometheus
         args:
         - '--web.enable-remote-write-receiver'
         - '--config.file=/etc/prometheus/prometheus.yml'
