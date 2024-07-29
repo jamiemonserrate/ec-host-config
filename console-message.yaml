@@ -1,0 +1,18 @@
+#Change the DCUI Welcome message
+apiVersion: esx.vmware.com/v1alpha1
+kind: HostConfiguration
+metadata:
+  name: welcome-message
+  namespace: esx-system
+spec:
+  layertype: Incremental
+  profile: |
+    {
+      "esx": {
+          "system": {
+            "welcome_message": {
+                "message": "{align:center}{color:white} \n\n\n\n VMware Edge Cloud Orchestrator - Edge Host{/color}{/align}\n\n\n\n\n\n\n\n\n{align:center}{color:red}No Unauthorized Access{/color}{/align}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{align:center}{color:yellow} For access contact Jamie Monserrate on 555 555-5555{/color}{/align}"
+            }
+          }
+      }
+    }
