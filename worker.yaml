@@ -1,3 +1,4 @@
+apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachine
 metadata:
   name: ec-worker-9a01d3a1-b6be-423e-b5e5-3f2902da5ea3
