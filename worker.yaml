@@ -1,0 +1,10 @@
+kind: VirtualMachine
+metadata:
+  name: ec-worker-9a01d3a1-b6be-423e-b5e5-3f2902da5ea3
+  namespace: ec-system
+spec:
+  className: best-effort-large
+  imageName: ec-wrkr.ova
+  powerState: poweredOff
+  vmMetadata:
+    transport: CloudInit
